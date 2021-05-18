@@ -5,7 +5,7 @@ const WebSocket = require('ws');
 //You can use whatever port you want here
 //process.env.PORT is something a lot of hosting applications use
 //From what I know it should work for you, but if it doesn't you'll have to do some research
-const port = 6969;
+const port = process.env.PORT || 6969;
 
 
 //Creating the http server
@@ -25,6 +25,6 @@ wss.on('connection', function connection(ws) {
   })
 })
 
-server.listen(port, function() {
+server.listen(port, function(){
   console.log(`Server is listening on ${port}!`)
 })
