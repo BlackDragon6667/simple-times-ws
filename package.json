@@ -1,16 +1,19 @@
 {
-  "name": "cls",
+  "name": "simple-times-ws",
   "version": "1.0.0",
   "description": "node.js websocket server",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bufferutil": "^4.0.3",
     "express": "^4.17.1",
+    "http": "0.0.1-security",
+    "utf-8-validate": "^5.0.5",
     "ws": "^7.4.5"
   }
 }
