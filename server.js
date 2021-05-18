@@ -30,3 +30,5 @@ ws.on('connection', (ws) => {
 server.listen(port, function(){
   console.log(`Server is listening on ${port}!`)
 })
+
+server.on("error", err=>console.log(err));
